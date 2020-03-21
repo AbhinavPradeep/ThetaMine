@@ -16,28 +16,28 @@ namespace ThetaMine.API.Controllers
         [HttpGet]
         public JsonResult ListCandidates()
         {
-            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://appuser:apppassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
+            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://loluser:lolpassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
             var candidates = candidateRepos.GetAllCandidates();
             return new JsonResult(candidates);
         }
         [HttpGet("{candidateID}")]
         public Candidate GetCandidate(string candidateID)
         {
-            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://appuser:apppassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
+            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://loluser:lolpassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
             var candidate = candidateRepos.GetCandidate(candidateID);
             return candidate;
         }
         [HttpDelete("{candidateID}")]
         public long DeleteCandidate(string candidateID)
         {
-            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://appuser:apppassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
+            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://loluser:lolpassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
             var DeletedCount = candidateRepos.DeleteCandidate(candidateID);
             return DeletedCount;
         }
         [HttpPost]
         public ActionResult TestAddCandidate()
         {
-            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://appuser:apppassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
+            CandidateRepos candidateRepos = new CandidateRepos("mongodb+srv://loluser:lolpassword@clusterone-5rfg7.mongodb.net/test?retryWrites=true&w=majority");
             EmailID email = new EmailID("abhinav.pradeep", "gmail.com");
             email.IsPrimary = true;
             Candidate candidate = new Candidate();
