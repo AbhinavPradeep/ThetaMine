@@ -17,6 +17,7 @@
 mono_crash.*
 #configuration
 appsettings.json
+appsettings.development.json
 
 # Build results
 [Dd]ebug/
