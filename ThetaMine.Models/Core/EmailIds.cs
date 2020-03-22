@@ -24,7 +24,7 @@ namespace ThetaMine.Models.Core
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return (IEnumerator)this.emailIDset.AsEnumerable();
+            return this.emailIDset.GetEnumerator();
         }
     }
 }
