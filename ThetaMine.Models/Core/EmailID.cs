@@ -12,5 +12,10 @@ namespace ThetaMine.Models.Core
         public string DomainName { get; set; }
         public string Email { get { return $"{UserName}@{DomainName}"; } }
         public bool IsPrimary { get; set; }
+
+        public EmailID()
+        {
+            
+        }
     }
 }

@@ -39,18 +39,9 @@ namespace ThetaMine.API.Controllers
             return DeletedCount;
         }
         [HttpPost]
-        public ActionResult TestAddCandidate()
+        public ActionResult TestAddCandidate(Candidate candidate)
         {
             CandidateRepos candidateRepos = new CandidateRepos(_settings.Value.ConnectionString);
-            EmailID email = new EmailID("abhinav.pradeep", "gmail.com");
-            email.IsPrimary = true;
-            Candidate candidate = new Candidate();
-            EmailIDs emailIDs = new EmailIDs();
-            EmailID email2 = new EmailID("abhinav.pradeep", "hotmail.com");
-            email2.IsPrimary = false;
-            emailIDs.emailIDset.Add(email);
-            emailIDs.emailIDset.Add(email2);
-            candidate.emailIDs = emailIDs;
             candidateRepos.AddCandidate(candidate);
             return Ok();
         }
