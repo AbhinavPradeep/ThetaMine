@@ -1,13 +1,27 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 namespace ThetaMine.Models.Core
 {
-    public class Avatars
+    public class Avatars: IEnumerable<Avatar>
     {
         public Avatars()
         {
-            avatars = new List<Avatar>();
+            avatarset = new List<Avatar>();
         }
-        public List<Avatar> avatars { get; set; }
+        public Avatars(List<Avatar> avatars)
+        {
+            this.avatarset = avatars;
+        }
+        public List<Avatar> avatarset { get; set; }
+
+        public IEnumerator<Avatar> GetEnumerator()
+        {
+            return avatarset.GetEnumerator();
+        }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.avatarset.GetEnumerator();
+        }
     }
 }

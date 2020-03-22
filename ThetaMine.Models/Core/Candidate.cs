@@ -16,6 +16,10 @@ namespace ThetaMine.Models.Core
         public Candidate()
         {
             _id = RandomString(5,false);
+            emailIDs = new EmailIDs();
+            avatars = new Avatars();
+            phoneNumbers = new PhoneNumbers();
+            socialProfiles = new SocialProfiles();
         }
         public Candidate(string id)
         {
@@ -35,15 +39,6 @@ namespace ThetaMine.Models.Core
 	            return builder.ToString().ToLower();    
 	        return builder.ToString();    
 	    }   
-        // public EmailID Get_ID()
-        // {
-        //     foreach (EmailID email in emailIDs)
-        //     {
-        //         if(email.IsPrimary == true)
-        //             return email;
-        //     }
-        //     return null;
-        // }
     }
    
 }

@@ -1,13 +1,26 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 namespace ThetaMine.Models.Core
 {
-    public class PhoneNumbers
+    public class PhoneNumbers : IEnumerable<PhoneNumber>
     {
         public PhoneNumbers()
         {
-            phoneNumbers = new List<PhoneNumber>();
+            phoneNumberset = new List<PhoneNumber>();
         }
-        public List <PhoneNumber> phoneNumbers {get;set;}
+        public PhoneNumbers(List<PhoneNumber> phoneNumbers)
+        {
+            this.phoneNumberset = phoneNumbers;
+        }
+        public List<PhoneNumber> phoneNumberset { get; set; }
+        public IEnumerator<PhoneNumber> GetEnumerator()
+        {
+            return phoneNumberset.GetEnumerator();
+        }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.phoneNumberset.GetEnumerator();
+        }
     }
 }
