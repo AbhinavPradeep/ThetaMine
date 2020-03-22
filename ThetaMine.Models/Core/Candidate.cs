@@ -16,6 +16,9 @@ namespace ThetaMine.Models.Core
         public Candidate()
         {
             _id = RandomString(5,false);
+            emailIDs = new EmailIDs();
+            phoneNumbers = new PhoneNumbers();
+            socialProfiles = new SocialProfiles();
         }
         public Candidate(string id)
         {

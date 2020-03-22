@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 
 namespace ThetaMine.Models.Core
@@ -11,6 +12,12 @@ namespace ThetaMine.Models.Core
         {
             emailIDset = new List<EmailID>();
         }
+
+        public EmailIDs(IEnumerable<EmailID> seed)
+        {
+            this.emailIDset = seed.ToList();
+        }
+
         public EmailIDs(List<EmailID> emailIDs)
         {
             this.emailIDset = emailIDs;
