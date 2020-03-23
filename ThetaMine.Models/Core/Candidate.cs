@@ -3,6 +3,8 @@ using System.Text;
 using ThetaMine.Models.Evidences;
 using ThetaMine.Models.Extra;
 using ThetaMine.Models.Location;
+using ThetaMine.Models.Skills;
+using ThetaMine.Models.Work;
 
 namespace ThetaMine.Models.Core
 {
@@ -18,6 +20,8 @@ namespace ThetaMine.Models.Core
         public Documents documents{get;set;}
         public Languages languages{get;set;}
         public PrefferedJobLocations prefferedjobLocations{get;set;}
+        public ProffesionalSkills proffesionalSkills{get;set;}
+        public Career career{get;set;}
         public Candidate()
         {
             _id = RandomString(5, false);
@@ -30,6 +34,8 @@ namespace ThetaMine.Models.Core
             documents  = new Documents();
             languages = new Languages();
             prefferedjobLocations = new PrefferedJobLocations();
+            proffesionalSkills = new ProffesionalSkills();
+            career = new Career();
         }
         public Candidate(string id)
         {
