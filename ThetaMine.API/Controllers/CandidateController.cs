@@ -43,7 +43,7 @@ namespace ThetaMine.API.Controllers
         {
             CandidateRepos candidateRepos = new CandidateRepos(_settings.Value.ConnectionString);
             candidateRepos.AddCandidate(candidate);
-            return Ok();
+            return Ok(candidate._id);
         }
     }
 }
