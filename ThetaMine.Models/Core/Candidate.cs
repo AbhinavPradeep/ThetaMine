@@ -1,5 +1,8 @@
 using System;
 using System.Text;
+using ThetaMine.Models.Evidences;
+using ThetaMine.Models.Extra;
+using ThetaMine.Models.Location;
 
 namespace ThetaMine.Models.Core
 {
@@ -11,6 +14,10 @@ namespace ThetaMine.Models.Core
         public PhoneNumbers phoneNumbers { get; set; }
         public SocialProfiles socialProfiles { get; set; }
         public Gender gender{get;set;}
+        public Address address{get;set;}
+        public Documents documents{get;set;}
+        public Languages languages{get;set;}
+        public PrefferedJobLocations prefferedjobLocations{get;set;}
         public Candidate()
         {
             _id = RandomString(5, false);
@@ -19,6 +26,10 @@ namespace ThetaMine.Models.Core
             phoneNumbers = new PhoneNumbers();
             socialProfiles = new SocialProfiles();
             gender = new Gender();
+            address = new Address();
+            documents  = new Documents();
+            languages = new Languages();
+            prefferedjobLocations = new PrefferedJobLocations();
         }
         public Candidate(string id)
         {
