@@ -1,43 +1,47 @@
 {
-    "_id": "JOQYF",
-    "avatars": [{
-            "AvatarURL": "https:/unsplash.com/asaadadw",
-            "IsMain": false
-        },
-        {
-            "AvatarURL": "https:/unsplash.com/asfwr3r",
-            "IsMain": true
-        }
-    ],
-    "emailIDs": [{
-            "UserName": "pradeep.l",
-            "DomainName": "hotmail",
-            "IsPrimary": false
-        },
-        {
-            "UserName": "pradeep.l",
-            "DomainName": "gmail",
-            "IsPrimary": false
-        }
-    ],
-    "phoneNumbers": [{
-            "CountryCode": "+61",
-            "Number": "9901234566",
-            "IsMain": false
-        },
-        {
-            "CountryCode": "+61",
-            "Number": "0990098753",
-            "IsMain": true
-        }
-    ],
-    "socialProfiles": [{
-            "Type": "Facebook",
-            "URL": "https:/facebook.com"
-        },
-        {
-            "Type": "Twitter",
-            "URL": "https:/twitter.com"
-        }
-    ]
+  "_id": "JOQYF",
+  "avatars": [
+    {
+      "AvatarURL": "https://unsplash.com/asaadadw",
+      "IsMain": false
+    },
+    {
+      "AvatarURL": "https://unsplash.com/asfwr3r",
+      "IsMain": true
+    }
+  ],
+  "emailIDs": [
+    {
+      "UserName": "pradeep.l",
+      "DomainName": "hotmail",
+      "IsPrimary": false
+    },
+    {
+      "UserName": "pradeep.l",
+      "DomainName": "gmail",
+      "IsPrimary": false
+    }
+  ],
+  "phoneNumbers": [
+    {
+      "CountryCode": "+61",
+      "Number": "9901234566",
+      "IsMain": false
+    },
+    {
+      "CountryCode": "+61",
+      "Number": "0990098753",
+      "IsMain": true
+    }
+  ],
+  "socialProfiles": [
+    {
+      "Type": "Facebook",
+      "URL": "https://facebook.com"
+    },
+    {
+      "Type": "Twitter",
+      "URL": "https://twitter.com"
+    }
+  ]
 }

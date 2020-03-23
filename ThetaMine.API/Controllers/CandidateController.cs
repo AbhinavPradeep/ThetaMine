@@ -39,7 +39,7 @@ namespace ThetaMine.API.Controllers
             return DeletedCount;
         }
         [HttpPost]
-        public ActionResult AddCandidate(Candidate candidate)
+        public ActionResult AddCandidate([FromBody]Candidate candidate)
         {
             CandidateRepos candidateRepos = new CandidateRepos(_settings.Value.ConnectionString);
             candidateRepos.AddCandidate(candidate);
