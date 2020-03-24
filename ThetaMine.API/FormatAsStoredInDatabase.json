@@ -1,0 +1,93 @@
+{
+    "_id": "MIFFS",
+    "avatars": [{
+            "AvatarURL": "https:/unsplash.com/in0n87h89",
+            "IsMain": false
+        },
+        {
+            "AvatarURL": "https:/unsplash.com/r23trg45",
+            "IsMain": true
+        }
+    ],
+    "emailIDs": [{
+            "UserName": "abhinav.p",
+            "DomainName": "hotmail",
+            "IsPrimary": true
+        },
+        {
+            "UserName": "abhinav.p",
+            "DomainName": "gmail",
+            "IsPrimary": false
+        }
+    ],
+    "phoneNumbers": [{
+            "CountryCode": "+61",
+            "Number": "0988766554",
+            "IsMain": false
+        },
+        {
+            "CountryCode": "+61",
+            "Number": "4124543645",
+            "IsMain": true
+        }
+    ],
+    "socialProfiles": [{
+            "Type": "Faceebook",
+            "URL": "https:/facebook.com/dqdqwdqwd"
+        },
+        {
+            "Type": "Twitter",
+            "URL": "https:/twitter.com/dqwdqwd"
+        }
+    ],
+    "gender": {
+        "$numberInt": "0"
+    },
+    "address": {
+        "IsVerified": true,
+        "Country": "Australia",
+        "State": "QLD",
+        "Street": "Nyes",
+        "HouseNum": {
+            "$numberInt": "42"
+        }
+    },
+    "documents": [{
+            "IsVerified": false,
+            "DocumentID": "qwerty",
+            "Name": "Birth Certificate"
+        },
+        {
+            "IsVerified": false,
+            "DocumentID": "poiuy",
+            "Name": "PR"
+        }
+    ],
+    "languages": [{
+        "Name": "English",
+        "CanSpeak": true,
+        "CanRead": true,
+        "CanWrite": true
+    }],
+    "prefferedjobLocations": [{
+        "IsVerified": true,
+        "Country": "Australia",
+        "State": "QLD",
+        "Street": "Nyes",
+        "HouseNum": {
+            "$numberInt": "42"
+        }
+    }],
+    "proffesionalSkills": [{
+        "Name": "Coding",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "SkillRating": {
+            "$numberDouble": "6.7"
+        },
+        "IsVerified": true,
+        "ExperienceInMonth": {
+            "$numberInt": "60"
+        }
+    }],
+    "career": {}
+}
