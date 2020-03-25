@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThetaMine.Models", "..\Thet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThetaMine.Repos", "..\ThetaMine.Repos\ThetaMine.Repos.csproj", "{3188839B-CB9A-4511-9AEB-66A27565A280}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E832F5D6-218E-4948-B1CE-BA214E5A15A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5F6C60A6-0165-4457-B069-FF0A4DCB0FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thetamine.test", "..\thetamine.test\thetamine.test.csproj", "{FD1718D5-FEF7-417B-A84B-F0BB00F5DA8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,19 @@ Global
 		{3188839B-CB9A-4511-9AEB-66A27565A280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3188839B-CB9A-4511-9AEB-66A27565A280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3188839B-CB9A-4511-9AEB-66A27565A280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD1718D5-FEF7-417B-A84B-F0BB00F5DA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1718D5-FEF7-417B-A84B-F0BB00F5DA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1718D5-FEF7-417B-A84B-F0BB00F5DA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1718D5-FEF7-417B-A84B-F0BB00F5DA8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D589128-4AC7-40C4-B6F5-86F726D0A033} = {E832F5D6-218E-4948-B1CE-BA214E5A15A5}
+		{F98DD817-54A3-4E5F-B65D-BE8C7590F016} = {E832F5D6-218E-4948-B1CE-BA214E5A15A5}
+		{3188839B-CB9A-4511-9AEB-66A27565A280} = {E832F5D6-218E-4948-B1CE-BA214E5A15A5}
+		{FD1718D5-FEF7-417B-A84B-F0BB00F5DA8C} = {5F6C60A6-0165-4457-B069-FF0A4DCB0FBB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {252851D1-4B11-4F01-B010-AE2BCC62C68A}
