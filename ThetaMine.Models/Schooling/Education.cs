@@ -3,6 +3,6 @@ namespace ThetaMine.Models.Schooling
 {
     public class Education
     {
-
+        
     }
 }

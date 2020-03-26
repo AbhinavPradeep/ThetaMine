@@ -4,9 +4,9 @@ namespace ThetaMine.Models.Work
 {
     public class Career
     {
-        Companies companies{get;set;}
-        Projects projects{get;set;}
-        RolesAndResponsibilities responsibilities{get;set;}
+        public Companies companies{get;set;}
+        public Projects projects{get;set;}
+        public RolesAndResponsibilities responsibilities{get;set;}
 
         public Career()
         {

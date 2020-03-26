@@ -22,6 +22,7 @@ namespace ThetaMine.API
             services.AddControllers().AddNewtonsoftJson();
             services.AddOptions();
             services.Configure<ThetaMineSettings>(Configuration.GetSection("ThetaMineSettings"));
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,7 +33,12 @@ namespace ThetaMine.API
                 app.UseDeveloperExceptionPage();
             }
 
-            
+            app.UseCors(policy =>
+            {
+                policy.AllowAnyHeader();
+                policy.AllowAnyMethod();
+                policy.AllowAnyOrigin();
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();
